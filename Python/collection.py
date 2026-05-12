@@ -142,3 +142,17 @@ for i in list1:
     if i in list2 and i in list3:
         common_elements.append(i)
 print(common_elements)
+
+#Write a program to calculate and return the sum of distance between the adjacent numbers in an array of positive integers.
+
+mylist=[]
+N=int(input("Enter the value of N: "))
+for i in range(N):
+    num=int(input("Enter a values: "))
+    mylist.append(num)
+#print(len(mylist))
+sum=0
+for i in range(len(mylist)-1):
+    if i+1 in range(len(mylist)):
+        sum+=abs(mylist[i]-mylist[i+1])
+print("The sum of distance between the adjacent numbers is: ",sum)
