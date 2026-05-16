@@ -53,13 +53,60 @@
 #input = khushi*is*a*good*programmer
 #output = ****khushiisagoodprogrammer
 
-string ='khushi*is*a*good*programmer'
-newname=''
-val='' 
-for i in string:
-    if i!='*':
-        newname+=i
-    else:
-        val+=i
-print(newname)
-print(str(val+newname))
+# string ='khushi*is*a*good*programmer'
+# newname=''
+# val='' 
+# for i in string:
+#     if i!='*':
+#         newname+=i
+#     else:
+#         val+=i
+# print(newname)
+# print(str(val+newname))
+
+#===================================================================================
+#input:aaabbbbccceeeee
+#output:a3b4c3e5
+
+# name='aaabbbbccceeeee'
+# newname={}
+# for i in range(len(name)):
+#     key=name[i]
+#     count=0
+#     for j in range(len(name)):
+#         if key == name[j]:
+#             count+=1
+#     newname[key] = count
+# #Print(newname)
+# for i,j in newname.items():
+#     print(i,j,sep='',end='')
+
+#=====================================================================================
+
+# salary = int(input('Enter your salary :'))
+# rating = int(input('Enter your performance appraisal rating :'))
+# increment =0
+# if rating >=1 and rating<=3:
+#     increment = salary*10/100
+# elif rating>=3.1 and rating<=4:
+#     increment = salary*30/100
+# elif rating>=4.1 and rating<=5:
+#     increment = salary*40/100
+# else:
+#     print('Invalid rating')
+# print('Incrementted Salary: ' ,increment+salary)
+
+#===========================================================================
+#basic salary=20000
+#so we have to calculate the 
+#HRA of basicSalary =20%
+#TA of basicSalary = 30%
+#DA of GrossSalary = 45%
+#Calculate GrossSalary =?
+
+basicSalary =20000
+print("HRA of BasicSalary = 20%")
+print("TA of BasicSalary = 30%")
+print("DA of GrossSalary = 45%")
+GrossSalary=4000+6000+9000+basicSalary
+print("Gross Salary = ", GrossSalary)
