@@ -125,27 +125,58 @@
 #Input:572378233 3
 #Output:3
 
-mylist = [5,7,2,3,7,8,2,3,3]
-newdict ={}
-for i in range(len(mylist)):
-    count = 0
-    key = mylist[i]
-    j = 1
-    while j< len(mylist):
-        if key == mylist[j]:
-            count+=1
-        j = j+1
-    if count>1:
-        newdict[key] = count
-    max = newdict
-    print(max)
+# mylist = [5,7,2,3,7,8,2,3,3]
+# newdict ={}
+# for i in range(len(mylist)):
+#     count = 0
+#     key = mylist[i]
+#     j = 1
+#     while j< len(mylist):
+#         if key == mylist[j]:
+#             count+=1
+#         j = j+1
+#     if count>1:
+#         newdict[key] = count
+#     max = newdict
+#     print(max)
 
 #=======================================================================================
 
 # #Student Managment System
-# 1 Add student
-# 2 show student
-# 3 update student
-# 4 delete student
-# 5 exit
-# select any choice:
+# 1. Add Student
+# 2. Show Student
+# 3. Update Student
+# 4. Delete Student
+# 5. Exit
+# Select any choice1
+# Enter Student ID: 101
+# Enter Student Roll Number: 101
+# Enter Student Name : Jayshri
+# Enter Student City: Nagpur
+
+# '''
+
+#=======================================================================================
+
+#Wipro NLTH 
+#Input: 8
+#79 77 54 81 48 34 25 16
+#Output:
+#3
+#Explanation: The areas that are in square form are 81, 25 and 16. So the output is 3.
+
+n = int(input("Enter First Number : "))
+
+arr = list(map(int, input("Number : ").split()))
+
+count = 0
+
+for i in arr:
+    root = int(i ** 0.5)
+    
+    if root * root == i:
+        count += 1
+
+print(count)
+
+#=========================================================================================
